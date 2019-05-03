@@ -90,12 +90,12 @@ module.exports = {
 ## Service Worker & Web Worker related
 
 - Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
-
-- Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader). For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
+- Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader)  
+  For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
 
 #### Working \w `google/workbox-webpack-plugin`
 
-If you have a project with large `workbox` configurations, It's a good idea to split `google/workbox-webpack-plugin` to `workbox.config.js` as well.
+If you have a project with large configurations, It's a good idea to split `google/workbox-webpack-plugin` to `workbox.config.js` as well.
 
 ## Downgrade `laravel-mix` from `v4` to `v3.0.0`
 
