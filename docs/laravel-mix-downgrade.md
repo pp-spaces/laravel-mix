@@ -35,17 +35,17 @@ See [laravel-mix/issues/1914](https://github.com/JeffreyWay/laravel-mix/issues/1
 #### Applying Patch
 
 ```sh
-curl https://github.com/pp-spaces/laravel-mix/releases/latest/latest/download/package.json.diff | git apply -
+curl -L https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -
 ```
 
 #### Revert Patch
 
 ```sh
-curl https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -R -
+curl -L https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -R -
 ```
 
 Or specify `laravel` version:
 
 ```sh
-curl https://github.com/pp-spaces/laravel-mix/releases/download/v5.8.0/package.json.diff | git apply -
+curl -L https://github.com/pp-spaces/laravel-mix/releases/download/v5.8.0/package.json.diff | git apply -
 ```
