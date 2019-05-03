@@ -6,6 +6,8 @@
 
 > Well, I like to use **Dynamic Import** but the latest `laravel-mix` compiler has a bug that broke everything. So reverting back to `laravel-mix@3.0.0` is the best choice.
 
+See [laravel-mix/issues/1914](https://github.com/JeffreyWay/laravel-mix/issues/1914) for more detail.
+
 ## What's the different?
 
 ```diff
