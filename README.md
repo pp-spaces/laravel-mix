@@ -74,7 +74,7 @@ module.exports = {
 }
 ```
 
-## ESLint Pre-configured
+#### ESLint Pre-configured
 
 - **VueJS**: Follow [socheatsok78/eslint-config-altar](https://github.com/socheatsok78/eslint-config-altar#readme) for more detail
 - **ReactJS**: Follow [wesbos/eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos#readme) for more detail
