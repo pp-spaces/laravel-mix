@@ -1,4 +1,4 @@
-# `@pp-spaces` No-Sweat™ Webpack \w ESLint and Laravel Mix Setup
+# No-Sweat™ Webpack \w ESLint and Laravel Mix Setup @pp-spaces
 
 ## Laravel Mix - Best Practices
 
