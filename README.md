@@ -6,7 +6,7 @@ Laravel Mix for @pp-spaces
 
 > Well, I like to use **Dynamic Import** but the latest `laravel-mix` compiler has a bug that broke everything. So reverting back to `laravel-mix@3.0.0` is the best choice.
 
-## What's different?
+## What's the different?
 
 ```diff
 "devDependencies": {
@@ -30,19 +30,13 @@ Laravel Mix for @pp-spaces
 }
 ```
 
-## `package.json`
+## How to configure Laravel Mix
 
-```json
-{
-  "devDependencies": {
-    "@babel/core": "^7.3.4",
-    "@babel/plugin-proposal-object-rest-spread": "^7.3.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.2.0",
-    "@babel/polyfill": "^7.2.5",
-    "imagemin": "^6.1.0",
-    "laravel-mix": "^3.0.0",
-    "purify-css": "^1.2.5",
-    "purifycss-webpack": "^0.7.0"
-  }
-}
-```
+- Split your configurations into smaller files,  
+e.g. Move your `webpackConfig` to `webpack.config.js`. Later we can use `webpack.config.js` with `ESLint` for resolving custom modules
+- Setup `ESLint` cli and `eslint-loader` for webpack  
+All ESLint rules & configurations will be store in `.eslintrc.js` or `.eslintrc`,  
+I recommended to use `.eslintrc.js`  
+Follow [socheatsok78/eslint-config-altar](https://github.com/socheatsok78/eslint-config-altar#readme) for more detail
+
+#### More `@pp-spaces` custom Laravel Mix extension. [click here](https://github.com/search?q=topic%3Alaravel-mix+org%3App-spaces&type=Repositories)
