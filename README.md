@@ -6,7 +6,9 @@
 
 Move your `webpackConfig` to `webpack.config.js`. So that later we can use `webpack.config.js` with `ESLint` for resolving custom modules.
 
-e.g. `webpack.config.js` \w `webpack.mix.js`
+e.g. This will help you getting started:
+
+'**webpack.config.js**
 
 ```js
 // webpack.config.js
@@ -39,7 +41,11 @@ module.exports = {
     // Your Webpack Plugins
   ]
 };
+```
 
+**webpack.mix.js**
+
+```js
 // webpack.mix.js
 const mix = require("laravel-mix");
 const webpackConfig = require("webpack.config");
