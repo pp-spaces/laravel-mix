@@ -32,20 +32,14 @@ See [laravel-mix/issues/1914](https://github.com/JeffreyWay/laravel-mix/issues/1
 }
 ```
 
-#### Applying Patch
+#### Automatically Applying Patch
 
 ```sh
-curl -L https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -
+curl -L https://pp-spaces.io/laravel-mix/patch/v5.8.0/package.json.diff | git apply -
 ```
 
 #### Revert Patch
 
 ```sh
-curl -L https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -R -
-```
-
-Or specify `laravel` version:
-
-```sh
-curl -L https://github.com/pp-spaces/laravel-mix/releases/download/v5.8.0/package.json.diff | git apply -
+curl -L https://pp-spaces.io/laravel-mix/patch/v5.8.0/package.json.diff | git apply -R -
 ```
