@@ -90,8 +90,8 @@ module.exports = {
 
 If you have a project with large `workbox` configurations, It's a good idea to split `google/workbox-webpack-plugin` to `workbox.config.js` as well.
 
-## Downgrade laravel-mix from v4 to v3.0.0
+## Downgrade `laravel-mix` from `v4` to `v3.0.0`
 
 > Well, I like to use **Dynamic Import** but the latest `laravel-mix` compiler has a bug that broke everything. So reverting back to `laravel-mix@3.0.0` is the best choice.
 
-Click here for [How-to Downgrade](docs/laravel-mix-downgrade.md)
+Click here for [How-to downgrade Laravel Mix](docs/laravel-mix-downgrade.md)
