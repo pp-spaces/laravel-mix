@@ -1,6 +1,4 @@
-# Laravel Mix
-
-Laravel Mix for @pp-spaces
+# `@pp-spaces` Customized Laravel Mix
 
 ## Why I created this?
 
