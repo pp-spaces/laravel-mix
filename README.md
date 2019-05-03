@@ -75,7 +75,7 @@ module.exports = {
 
 #### More `@pp-spaces` custom Laravel Mix extension. [click here](https://github.com/search?q=topic%3Alaravel-mix+org%3App-spaces&type=Repositories)
 
-### Service Worker \r Web Worker related
+## Service Worker \r Web Worker related
 
 - Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
 - Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader) \w `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader)
