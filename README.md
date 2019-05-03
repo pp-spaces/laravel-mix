@@ -32,6 +32,24 @@
 
 - I recommended to apply this patch on newly created project.
 
+#### Applying Patch
+
+```sh
+curl https://github.com/pp-spaces/laravel-mix/releases/latest/latest/download/package.json.diff | git apply -
+```
+
+#### Revert Patch
+
+```sh
+curl https://github.com/pp-spaces/laravel-mix/releases/latest/download/package.json.diff | git apply -R -
+```
+
+Or specify `laravel` version:
+
+```sh
+curl https://github.com/pp-spaces/laravel-mix/releases/download/v5.8.0/package.json.diff | git apply -
+```
+
 ## How to configure Laravel Mix
 
 - Split your configurations into smaller files,  
