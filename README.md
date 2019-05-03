@@ -80,7 +80,7 @@ module.exports = {
 }
 ```
 
-#### ESLint Pre-configured
+#### ESLint Pre-configured config
 
 - **VueJS**: Follow [socheatsok78/eslint-config-altar](https://github.com/socheatsok78/eslint-config-altar#readme) for more detail
 - **ReactJS**: Follow [wesbos/eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos#readme) for more detail
@@ -90,7 +90,8 @@ module.exports = {
 ## Service Worker & Web Worker related
 
 - Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
-- Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader) \w `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader)
+
+- Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader). For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
 
 #### Working \w `google/workbox-webpack-plugin`
 
