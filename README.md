@@ -62,7 +62,7 @@ mix.webpackConfig(webpackConfig);
 ### Setup `ESLint` cli and `eslint-loader` for webpack
 
 All ESLint rules & configurations will be store in `.eslintrc.js` or `.eslintrc`,  
-I recommended to use `.eslintrc.js`
+I recommended to use `.eslintrc`
 
 ```js
 // .eslintrc.js
