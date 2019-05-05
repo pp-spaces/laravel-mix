@@ -14,7 +14,7 @@ Move your `webpackConfig` to `webpack.config.js`. So that later we can use `webp
 
 e.g. This will help you getting started:
 
-'**webpack.config.js**
+'**webpack.config.js** - see [example](example/webpack.config.js)
 
 ```js
 // webpack.config.js
@@ -49,7 +49,7 @@ module.exports = {
 };
 ```
 
-**webpack.mix.js**
+**webpack.mix.js** - see [example](example/webpack.mix.js)
 
 ```js
 // webpack.mix.js
