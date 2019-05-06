@@ -1,0 +1,12 @@
+{
+  "extends": ["altar"],
+  "rules": {
+    "camelcase": "error",
+    "no-console": "warn"
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": "webpack.config.js"
+    }
+  }
+}

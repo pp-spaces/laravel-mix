@@ -65,9 +65,9 @@ All ESLint rules & configurations will be store in `.eslintrc.js` or `.eslintrc`
 I recommended to use `.eslintrc`
 
 ```js
-// .eslintrc.js
+// .eslintrc
 
-module.exports = {
+{
     "extends": ["altar"], // github:socheatsok78/eslint-config-altar
     "rules": {
         ...
@@ -79,6 +79,8 @@ module.exports = {
     }
 }
 ```
+
+See [.eslintrc example](example/.eslintrc)
 
 #### ESLint Pre-configured config
 
