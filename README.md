@@ -91,7 +91,7 @@ See [.eslintrc example](example/.eslintrc)
 
 ## Service Worker & Web Worker related
 
--   Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
+-   Service Worker, see [Workbox by Google](https://developers.google.com/web/tools/workbox/)
 -   Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader)  
     For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
 
