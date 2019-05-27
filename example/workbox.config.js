@@ -22,7 +22,7 @@ module.exports = [
         cleanupOutdatedCaches: true,
 
         // Exclude images from the precache
-        exclude: [/\.(?:png|jpg|jpeg|svg)$/],
+        exclude: [/\.(?:png|gif|jpg|jpeg|svg|webp|tif)$/],
 
         // App Shell HTML for Single Page Application
         navigateFallback: '/home',
@@ -48,21 +48,21 @@ module.exports = [
 
             // Dynamic Assets
             {
-                urlPattern: /\.(?:js)/,
+                urlPattern: /\.(?:js)$/,
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'cached-js',
                 },
             },
             {
-                urlPattern: /\.(?:css)/,
+                urlPattern: /\.(?:css)$/,
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'cached-css',
                 },
             },
             {
-                urlPattern: /\.(?:png|jpg|jpeg|svg)$/,
+                urlPattern: /\.(?:png|gif|jpg|jpeg|svg|webp|tif)$/,
                 handler: 'CacheFirst',
                 options: {
                     cacheName: 'cached-image',
