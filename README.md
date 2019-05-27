@@ -1,10 +1,10 @@
 # No-Sweat™ Webpack \w ESLint and Laravel Mix Setup
 
-- Webpack: A highly configurable module bundler for modern JavaScript applications.
+-   Webpack: A highly configurable module bundler for modern JavaScript applications.
 
-- ESLint: Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines.
+-   ESLint: Code linting is a type of static analysis that is frequently used to find problematic patterns or code that doesn’t adhere to certain style guidelines.
 
-- Laravel Mix: An elegant wrapper around Webpack for the 80% use case.
+-   Laravel Mix: An elegant wrapper around Webpack for the 80% use case.
 
 ## Laravel Mix - Best Practices
 
@@ -84,16 +84,16 @@ See [.eslintrc example](example/.eslintrc)
 
 #### ESLint Pre-configured config
 
-- **VueJS**: Follow [socheatsok78/eslint-config-altar](https://github.com/socheatsok78/eslint-config-altar#readme) for more detail
-- **ReactJS**: Follow [wesbos/eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos#readme) for more detail
+-   **VueJS**: Follow [socheatsok78/eslint-config-altar](https://github.com/socheatsok78/eslint-config-altar#readme) for more detail
+-   **ReactJS**: Follow [wesbos/eslint-config-wesbos](https://github.com/wesbos/eslint-config-wesbos#readme) for more detail
 
 #### More `@pp-spaces` custom Laravel Mix extension. [click here](https://github.com/search?q=topic%3Alaravel-mix+org%3App-spaces&type=Repositories)
 
 ## Service Worker & Web Worker related
 
-- Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
-- Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader)  
-  For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
+-   Service Worker, see [google/workbox-webpack-plugin](https://developers.google.com/web/tools/workbox/modules/workbox-webpack-plugin)
+-   Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader)  
+    For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
 
 #### Working \w `google/workbox-webpack-plugin`
 
