@@ -9,7 +9,8 @@ module.exports = [
         importWorkboxFrom: 'cdn',
 
         // Import Custom Workbox Script
-        importScripts: ['/workbox.mix.js'],
+        // Create workbox.mix.js in your public directory before enable
+        // importScripts: ['/workbox.mix.js'],
 
         // Should skip over the waiting lifecycle stage
         skipWaiting: true,
@@ -23,16 +24,20 @@ module.exports = [
         // Exclude images from the precache
         exclude: [/\.(?:png|jpg|jpeg|svg)$/],
 
-        // App Shell HTML
+        // App Shell HTML for Single Page Application
         navigateFallback: '/home',
 
         // Set up an appropriate reesponse strategy
         // that will match navigation requests,
         // and make use of the preloaded response.
-        // navigationPreload: true,
+        // Not recommended for Single Page Application
 
+        // navigationPreload: true,
+        
         // Define runtime caching rules.
         runtimeCaching: [
+            // With navigationPreload === true
+            // Uncommnet the code below
             // {
             //     urlPattern: ({ event }) => event.request.mode === 'navigate',
             //     handler: 'NetworkFirst',
@@ -40,6 +45,8 @@ module.exports = [
             //         cacheName: 'cached-navigations',
             //     },
             // },
+
+            // Dynamic Assets
             {
                 urlPattern: /\.(?:js)/,
                 handler: 'CacheFirst',
@@ -64,6 +71,8 @@ module.exports = [
                     },
                 },
             },
+
+            // API Routing
             {
                 urlPattern: /api/,
                 handler: 'NetworkFirst',
@@ -86,16 +95,25 @@ module.exports = [
                     },
                 },
             },
+
+            // Google Fonts
             {
-                urlPattern: /^https:\/\/fonts\.(?:googleapis|gstatic)\.com/,
+                urlPattern: /^https:\/\/fonts\.googleapis\.com/,
+                handler: 'StaleWhileRevalidate',
+                options: {
+                    cacheName: 'google-fonts-stylesheets',
+                }
+            },
+            {
+                urlPattern: /^https:\/\/fonts\.gstatic\.com/,
                 handler: 'CacheFirst',
                 options: {
-                    cacheName: 'cached-font',
+                    cacheName: 'google-fonts-webfonts',
                     cacheableResponse: {
                         statuses: [0, 200],
                     },
                     expiration: {
-                        maxEntries: 10,
+                        maxAgeSeconds: 60 * 60 * 24 * 365,
                     },
                 },
             },
