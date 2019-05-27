@@ -19,33 +19,33 @@ e.g. This will help you getting started:
 ```js
 // webpack.config.js
 module.exports = {
-  resolve: {
-    extensions: [".js", ".vue", ".json"],
-    alias: {
-      vue$: "vue/dist/vue.esm.js",
-      "@": `${__dirname}/resources/js`
-    }
-  },
-  module: {
-    rules: [
-      {
-        enforce: "pre",
-        test: /\.(js|vue)$/,
-        exclude: /node_modules|vendor/,
-        loader: "eslint-loader",
-        options: {}
-      }
+    resolve: {
+        extensions: [".js", ".vue", ".json"],
+        alias: {
+            vue$: "vue/dist/vue.esm.js",
+            "@": `${__dirname}/resources/js`
+        }
+    },
+    module: {
+        rules: [
+            {
+                enforce: "pre",
+                test: /\.(js|vue)$/,
+                exclude: /node_modules|vendor/,
+                loader: "eslint-loader",
+                options: {}
+            }
+        ]
+    },
+    output: {
+        filename: "[name].js",
+        chunkFilename: "js/[name]/[chunkhash].js",
+        path: `${__dirname}/public`,
+        publicPath: "/"
+    },
+    plugins: [
+        // Your Webpack Plugins
     ]
-  },
-  output: {
-    filename: "[name].js",
-    chunkFilename: "js/[name]/[chunkhash].js",
-    path: `${__dirname}/public`,
-    publicPath: "/"
-  },
-  plugins: [
-    // Your Webpack Plugins
-  ]
 };
 ```
 
