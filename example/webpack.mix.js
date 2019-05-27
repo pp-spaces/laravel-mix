@@ -1,4 +1,6 @@
 const mix = require('laravel-mix');
+const path = require('path');
+const replace = require('replace-in-file');
 
 /**
  * Other Configurations
@@ -19,4 +21,15 @@ const webpackConfig = require('./webpack.config');
 mix.js('resources/js/app.js', 'public/js')
     .sass('resources/sass/app.scss', 'public/css')
     .extract(['vue', 'lodash', 'jquery', 'popper.js', 'bootstrap'])
-    .webpackConfig(webpackConfig);
+    .webpackConfig(webpackConfig)
+    .then(config => {
+        /**
+         * Fix url path issues on generated Service Worker
+         * NOTE: This is a workaround
+         */
+        replace.sync({
+            files: path.normalize(`${__dirname}/public/precache-manifest.*.js`),
+            from: /"\/\//gu,
+            to: '"/',
+        });
+    });

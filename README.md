@@ -95,6 +95,12 @@ See [.eslintrc example](example/.eslintrc)
 -   Web Worker, see [developit/workerize-loader](https://github.com/developit/workerize-loader)  
     For `Laravel Mix v4`, see [webpack-contrib/worker-loader](https://github.com/webpack-contrib/worker-loader) or [GoogleChromeLabs/worker-plugin](https://github.com/GoogleChromeLabs/worker-plugin)
 
+#### Example for Workbox \w Laravel Mix
+
+-   [webpack.mix.js example](example/webpack.mix.js)
+-   [workbox.config.js example](example/workbox.config.js)
+-   [Register ServiceWorker Script](example/resources/js/utils/serviceWorker.js)
+
 #### Working \w `google/workbox-webpack-plugin`
 
 If you have a project with large configurations, It's a good idea to split `google/workbox-webpack-plugin` to `workbox.config.js` as well.

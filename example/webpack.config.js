@@ -2,6 +2,11 @@ const webpack = require('webpack');
 const path = require('path');
 
 /**
+ * Workbox configuration
+ */
+const WorkboxWebpackPlugin = require('./workbox.config');
+
+/**
  * Export Webpack Config
  */
 module.exports = {
@@ -26,6 +31,9 @@ module.exports = {
         ],
     },
     plugins: [
+        // Register Workbox Webpack Plugin
+        ...WorkboxWebpackPlugin,
+
         new webpack.LoaderOptionsPlugin({
             options: {
                 eslint: {
